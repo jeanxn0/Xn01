@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área Professores</title>
+   <!-- Adicione um arquivo CSS se necessário -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul style="display: flex; justify-content: center; list-style: none; padding: 0; margin: 0;">
+        <li style="margin: 0 15px;"><a href="site.html">Home</a></li>
+        <li style="margin: 0 15px;"><a href="login.html">Login</a></li>
+        <li style="margin: 0 15px;"><a href="historia.html">Historia</a></li>
+      </ul>
+      <section id="professores-area">
+        <h2>Área dos Professores</h2>
+        <div>
+          <h3>Quadro de Avisos</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li>Horário de funcionamento</li>
+            <li>Segunda a Sexta: 06h às 22h</li>
+            <li>Sábado: 08h às 14h</li>
+            <li>Domingos e feriados: FECHADO</li>
+              
+          </ul>
+        </div>
+        <div>
+          <h3>CRUD de alunos</h3>
+          <p>Gerencie informações dos alunos:</p>
+          <table border="1" style="width: 100%; text-align: left; border-collapse: collapse;">
+            <thead>
+              <tr>
+                <th>Ação</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adicionar alunos</td>
+                <td>Adicione um novo aluno ao sistema.</td>
+              </tr>
+              <tr>
+                <td>Editar alunos</td>
+                <td>Edite as informações de um aluno existente.</td>
+              </tr>
+              <tr>
+                <td>Remover alunos</td>
+                <td>Remova um aluno do sistema.</td>
+              </tr>
+              <tr>
+                <td>Listar alunos</td>
+                <td>Veja a lista de todos os alunos disponíveis.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </nav>
+  </header>
+  
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      text-align: center;
+      background-image: url('https://i.pinimg.com/736x/36/bb/f3/36bbf382c9b5f6561626278944ae4084.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .menu {
+      background-color: #474141;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 5;
+    }
+
+    .menu ul li {
+      margin: 0 92px;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 9px 12px;
+      transition: background-color 0.3s;
+    }
+
+    .menu ul li a:hover {
+      background-color: #666666;
+      border-radius: 4px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input {
+      margin: 9px;
+      padding: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th, td {
+      border: none;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #808080;
+    }
+
+    button {
+      margin: 8px;
+      padding: 5px 19px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu">
+
+    
+  </nav>
+
+  <h1>Cadastro de Pessoas</h1>
+  <br>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Adicionar</button>
+  </form>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Adicionar</button>
+  </form>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Adicionar</button>
+  </form>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Adicionar</button>
+  </form>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Adicionar</button>
+  </form>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <br><br>
+  <img src="https://i.pinimg.com/736x/00/cd/8e/00cd8eabf948d596af53e10361a99928.jpg" alt="academia" width="600px" height="400px">
+  <img src="https://i.pinimg.com/736x/0f/c6/76/0fc6760ff11a350135ec0efd5e3fff13.jpg" alt="academia" width="600px" height="400px">
+
+  <h2>Lista de Pessoas Já Confirmadas</h2>
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Editar</th>
+      <th>Remover</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="nome1" name="nome1" required></td>
+      <td><input type="text" id="email1" name="email1" required></td>
+      <td><button type="button">Editar</button></td>
+      <td><button type="button">Excluir</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="nome2" name="nome2" required></td>
+      <td><input type="text" id="email2" name="email2" required></td>
+      <td><button type="button">Editar</button></td>
+      <td><button type="button">Excluir</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="nome3" name="nome3" required></td>
+      <td><input type="text" id="email3" name="email3" required></td>
+      <td><button type="button">Editar</button></td>
+      <td><button type="button">Excluir</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="nome4" name="nome4" required></td>
+      <td><input type="text" id="email4" name="email4" required></td>
+      <td><button type="button">Editar</button></td>
+      <td><button type="button">Excluir</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="nome5" name="nome5" required></td>
+      <td><input type="text" id="email5" name="email5" required></td>
+      <td><button type="button">Editar</button></td>
+      <td><button type="button">Excluir</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="nome6" name="nome6" required></td>
+      <td><input type="text" id="email6" name="email6" required></td>
+      <td><button type="button">Editar</button></td>
+      <td><button type="button">Excluir</button></td>
+    </tr>
+  </table>
+
+  <br><br>
+  <img src="https://i.pinimg.com/736x/9d/4b/ec/9d4bec2416c78e8abafecd7c8cbd030f.jpg" alt="academia" width="400px" height="300px">
+  <img src="https://i.pinimg.com/736x/5b/4c/4d/5b4c4d745ae530b868d514eb889aa6aa.jpg" alt="academia" width="400px" height="300px">
+  <img src="https://i.pinimg.com/736x/9a/30/4e/9a304e0e469dc56218f52aa6c83bcf8b.jpg" alt="academia" width="400px" height="300px">
+</body>
+</html>
+
+  <br>
+<br>
+    <footer>
+        <div style="text-align: center; padding: 10px; background-color: #f1f1f1; border-top: 1px solid #ccc;">
+            <p style="margin: 0; font-size: 14px; color: #555;">Desenvolvido por Jean, Bruno e Jonathans</p>
+        </div>
+    </footer>
+</body>
+</html>
